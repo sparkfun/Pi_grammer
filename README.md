@@ -1,4 +1,4 @@
-# Pigrammer
+# Pi_grammer
 A shield for Raspberry Pi 2, used for programming AVR ICs. Includes capsense pad to engage, 3x2 ISP header for connectivity and status LEDs.
 
 This project originated from Adafruits tutorial here:
