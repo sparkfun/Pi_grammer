@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -162,7 +162,7 @@
 <wire x1="58.42" y1="76.2" x2="58.42" y2="2.54" width="0.254" layer="20"/>
 <wire x1="58.42" y1="2.54" x2="55.88" y2="0" width="0.254" layer="20" curve="-90"/>
 <wire x1="55.88" y1="0" x2="2.54" y2="0" width="0.254" layer="20"/>
-<text x="29.337" y="72.644" size="1.778" layer="21" font="vector" ratio="15">Pigrammer</text>
+<text x="28.067" y="72.644" size="1.778" layer="21" font="vector" ratio="15">Pi_grammer</text>
 <text x="6.7724375" y="75.946675" size="1.27" layer="21" font="vector" ratio="15">HARDWARE #</text>
 <text x="26.67" y="52.07" size="1.27" layer="21" font="vector" ratio="15" align="center-right">TEST SCRIPT RUNNING</text>
 <text x="17.78" y="36.83" size="1.778" layer="21" font="vector" ratio="15" align="center-right">FUSE BITS</text>
@@ -858,7 +858,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-00818" x="28.194" y="26.67" size="1.27" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="D7" library="SparkFun-LED" package="LED-1206" value="GREEN" x="24.13" y="26.67" rot="R180"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="30.861" y="73.66"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="35.941" y="74.93"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="55.88" y="76.454"/>
 <element name="U1" library="SparkFun-DigitalIC" package="SOT23-6" value="AT42QT1010SOT23" x="35.56" y="17.78" rot="R270"/>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="39.243" y="17.653" rot="R270"/>
