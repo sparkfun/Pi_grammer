@@ -154,14 +154,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="58.42" y1="76.2" x2="55.88" y2="78.74" width="0.254" layer="20" curve="90"/>
-<wire x1="55.88" y1="78.74" x2="2.54" y2="78.74" width="0.254" layer="20"/>
+<wire x1="63.5" y1="76.2" x2="60.96" y2="78.74" width="0.254" layer="20" curve="90"/>
+<wire x1="60.96" y1="78.74" x2="2.54" y2="78.74" width="0.254" layer="20"/>
 <wire x1="2.54" y1="78.74" x2="0" y2="76.2" width="0.254" layer="20" curve="90"/>
 <wire x1="0" y1="76.2" x2="0" y2="2.54" width="0.254" layer="20"/>
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0.254" layer="20" curve="90"/>
-<wire x1="58.42" y1="76.2" x2="58.42" y2="2.54" width="0.254" layer="20"/>
-<wire x1="58.42" y1="2.54" x2="55.88" y2="0" width="0.254" layer="20" curve="-90"/>
-<wire x1="55.88" y1="0" x2="2.54" y2="0" width="0.254" layer="20"/>
+<wire x1="63.5" y1="76.2" x2="63.5" y2="2.54" width="0.254" layer="20"/>
+<wire x1="63.5" y1="2.54" x2="60.96" y2="0" width="0.254" layer="20" curve="-90"/>
+<wire x1="60.96" y1="0" x2="2.54" y2="0" width="0.254" layer="20"/>
 <text x="28.067" y="72.644" size="1.778" layer="21" font="vector" ratio="15">Pi_grammer</text>
 <text x="6.7724375" y="75.946675" size="1.27" layer="21" font="vector" ratio="15">HARDWARE #</text>
 <text x="26.67" y="52.07" size="1.27" layer="21" font="vector" ratio="15" align="center-right">TEST SCRIPT RUNNING</text>
@@ -173,14 +173,14 @@
 <text x="32.385" y="67.818" size="0.8128" layer="21" font="vector" ratio="15">RASPI 
 AVR 
 PROGRAMMER</text>
-<text x="50.8" y="2.54" size="1.27" layer="21" font="vector" ratio="15" align="center">SHUTDOWN
+<text x="44.45" y="3.81" size="1.27" layer="21" font="vector" ratio="15" align="center">SHUTDOWN
 RASPI</text>
 <text x="17.78" y="31.75" size="1.778" layer="21" font="vector" ratio="15" align="center-right">FLASH HEX</text>
 <wire x1="33.02" y1="24.13" x2="44.45" y2="24.13" width="0.254" layer="21"/>
 <wire x1="0" y1="29.21" x2="44.45" y2="29.21" width="0.254" layer="21"/>
 <text x="17.78" y="26.67" size="1.778" layer="21" font="vector" ratio="15" align="center-right">LOCK BITS</text>
 <text x="29.21" y="77.47" size="1.778" layer="16" font="vector" ratio="21" rot="MR0" align="center-right">v01</text>
-<text x="50.038" y="13.462" size="0.6096" layer="21" font="vector" ratio="15">10K</text>
+<text x="43.688" y="13.462" size="0.6096" layer="21" font="vector" ratio="15">10K</text>
 <text x="21.59" y="40.64" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="center-right">SUCCESS</text>
 <wire x1="20.32" y1="16.51" x2="17.78" y2="19.05" width="0.6096" layer="21" curve="90"/>
 <wire x1="17.78" y1="19.05" x2="3.81" y2="19.05" width="0.6096" layer="21"/>
@@ -200,6 +200,8 @@ RASPI</text>
 <rectangle x1="1.27" y1="59.69" x2="25.4" y2="74.93" layer="21"/>
 <text x="10.668" y="9.779" size="2.1844" layer="21" font="vector" ratio="15" align="bottom-center">TO</text>
 <text x="10.668" y="12.954" size="2.1844" layer="21" font="vector" ratio="15" align="bottom-center">TAP</text>
+<wire x1="54.61" y1="88.9" x2="54.61" y2="-13.97" width="0.254" layer="51" style="shortdash"/>
+<text x="53.34" y="81.28" size="1.778" layer="51" font="vector" ratio="15" rot="R90">EDGE of raspi enclosure</text>
 </plain>
 <libraries>
 <library name="SparkFun-Boards">
@@ -848,24 +850,24 @@ design rules under a new name.</description>
 <element name="R6" library="SparkFun-Resistors" package="0603-RES@1" value="1K" x="28.194" y="31.75">
 <attribute name="PROD_ID" value="RES-00818" x="28.194" y="31.75" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="" x="50.8" y="7.62" rot="R180">
-<attribute name="PROD_ID" value="SWCH-08247" x="50.8" y="7.62" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="" x="44.45" y="8.89" rot="R180">
+<attribute name="PROD_ID" value="SWCH-08247" x="44.45" y="8.89" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="R7" library="SparkFun-Resistors" package="0603-RES@1" value="10K" x="50.8" y="12.7" rot="R180">
-<attribute name="PROD_ID" value="RES-00818" x="50.8" y="12.7" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<element name="R7" library="SparkFun-Resistors" package="0603-RES@1" value="10K" x="44.45" y="12.7" rot="R180">
+<attribute name="PROD_ID" value="RES-00818" x="44.45" y="12.7" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
 <element name="R8" library="SparkFun-Resistors" package="0603-RES@1" value="1K" x="28.194" y="26.67">
 <attribute name="PROD_ID" value="RES-00818" x="28.194" y="26.67" size="1.27" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="D7" library="SparkFun-LED" package="LED-1206" value="GREEN" x="24.13" y="26.67" rot="R180"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="35.941" y="74.93"/>
-<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="55.88" y="76.454"/>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="60.96" y="76.454"/>
 <element name="U1" library="SparkFun-DigitalIC" package="SOT23-6" value="AT42QT1010SOT23" x="35.56" y="17.78" rot="R270"/>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="39.243" y="17.653" rot="R270"/>
 <element name="C2" library="SparkFun-Capacitors" package="0603-CAP" value="10nF" x="35.56" y="15.24"/>
 <element name="R11" library="SparkFun-Resistors" package="0603-RES" value="10k" x="31.75" y="15.24" rot="R180"/>
 <element name="JP9" library="SparkFun-Connectors" package="PAD-1.5X4.5" value="M01SMD-4.5X1.5" x="19.05" y="10.16" rot="MR0"/>
-<element name="J1" library="SparkFun-Connectors" package="2X3_LOCK" value="" x="34.29" y="3.81"/>
+<element name="J1" library="SparkFun-Connectors" package="2X3_LOCK" value="" x="55.88" y="6.35"/>
 <element name="D8" library="SparkFun-LED" package="LED-1206" value="RED" x="38.1" y="26.67" rot="R180"/>
 <element name="R9" library="SparkFun-Resistors" package="0603-RES@1" value="1K" x="42.164" y="26.67" rot="R180">
 <attribute name="PROD_ID" value="RES-00818" x="42.164" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
@@ -897,16 +899,16 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="39"/>
 <polygon width="0.381" layer="16" isolate="0.381">
 <vertex x="0" y="78.74"/>
-<vertex x="58.42" y="78.74"/>
-<vertex x="58.42" y="0"/>
+<vertex x="63.5" y="78.74"/>
+<vertex x="63.5" y="0"/>
 <vertex x="21.59" y="0"/>
 <vertex x="21.59" y="20.32"/>
 <vertex x="0" y="20.32"/>
 </polygon>
 <polygon width="0.381" layer="1" isolate="0.381">
 <vertex x="0" y="78.74"/>
-<vertex x="58.42" y="78.74"/>
-<vertex x="58.42" y="0"/>
+<vertex x="63.5" y="78.74"/>
+<vertex x="63.5" y="0"/>
 <vertex x="20.32" y="0"/>
 <vertex x="20.32" y="19.05"/>
 <vertex x="0" y="19.05"/>
@@ -956,7 +958,7 @@ design rules under a new name.</description>
 <wire x1="35.394" y1="55.88" x2="48.514" y2="69.85" width="0" layer="19" extent="1-1"/>
 <wire x1="48.514" y1="49.53" x2="35.394" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="39.077" y1="18.669" x2="48.514" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="51.65" y1="12.7" x2="39.243" y2="18.503" width="0" layer="19" extent="1-1"/>
+<wire x1="45.3" y1="12.7" x2="39.243" y2="18.503" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO">
 <contactref element="JP2" pad="8"/>
@@ -967,12 +969,12 @@ design rules under a new name.</description>
 <signal name="GP24">
 <contactref element="JP2" pad="18"/>
 <contactref element="J1" pad="3"/>
-<wire x1="36.83" y1="3.556" x2="51.054" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="6.096" x2="51.054" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GP18">
 <contactref element="JP2" pad="12"/>
 <contactref element="J1" pad="1"/>
-<wire x1="34.29" y1="3.81" x2="51.054" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="6.35" x2="51.054" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ID_SD">
 <contactref element="JP2" pad="27"/>
@@ -992,7 +994,7 @@ design rules under a new name.</description>
 <signal name="GP19">
 <contactref element="JP2" pad="35"/>
 <contactref element="J1" pad="5"/>
-<wire x1="39.37" y1="3.81" x2="48.514" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="6.35" x2="48.514" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GP20">
 <contactref element="JP2" pad="38"/>
@@ -1057,7 +1059,7 @@ design rules under a new name.</description>
 <signal name="GP23">
 <contactref element="JP2" pad="16"/>
 <contactref element="J1" pad="4"/>
-<wire x1="36.83" y1="6.096" x2="51.054" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="8.636" x2="51.054" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="D6" pad="A"/>
@@ -1073,8 +1075,8 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="S1" pad="1"/>
 <contactref element="JP2" pad="29"/>
-<wire x1="49.95" y1="12.7" x2="48.514" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="53.594" y1="5.715" x2="49.95" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="43.6" y1="12.7" x2="48.514" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="47.244" y1="6.985" x2="43.6" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="D7" pad="A"/>
