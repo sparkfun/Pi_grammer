@@ -19,3 +19,4 @@ note, test.py called pi_program.sh to actually begin programming.
 
 note, test.py also checks for MEDIA drives plugged into the USB ports of the Raspi. If there is a HEX file on the MEDIA drive (any name, it just has to have the ".hex" extension) it will copy it in and use that for programming.
 
+KEYWORDS: RASPI PROGRAMMER
