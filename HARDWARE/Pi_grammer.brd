@@ -202,6 +202,12 @@ RASPI</text>
 <text x="10.668" y="12.954" size="2.1844" layer="21" font="vector" ratio="15" align="bottom-center">TAP</text>
 <wire x1="54.61" y1="88.9" x2="54.61" y2="-13.97" width="0.254" layer="51" style="shortdash"/>
 <text x="53.34" y="81.28" size="1.778" layer="51" font="vector" ratio="15" rot="R90">EDGE of raspi enclosure</text>
+<text x="55.88" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" align="center">MISO</text>
+<text x="58.42" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" align="center">SCK</text>
+<text x="60.96" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" align="center">RST</text>
+<text x="58.42" y="11.43" size="0.6096" layer="21" font="vector" ratio="15" align="center">MOSI</text>
+<text x="60.96" y="11.43" size="0.6096" layer="21" font="vector" ratio="15" align="center">GND</text>
+<text x="55.88" y="11.43" size="0.6096" layer="21" font="vector" ratio="15" align="center">VCC</text>
 </plain>
 <libraries>
 <library name="SparkFun-Boards">
