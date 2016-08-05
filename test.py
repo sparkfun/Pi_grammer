@@ -56,6 +56,8 @@ firmware_path_media = ' '
 new_hex = False
 copy_flag = False
 
+stat_blink_counter = 0
+
 def all_leds_on():
         GPIO.output(STAT, GPIO.HIGH)
         GPIO.output(FUSE_P, GPIO.HIGH)
@@ -73,6 +75,27 @@ def all_leds_off():
         GPIO.output(FLASH_F, GPIO.LOW)
         GPIO.output(LOCK_P, GPIO.LOW)
         GPIO.output(LOCK_F, GPIO.LOW)
+
+def blink_circle():
+        GPIO.output(FUSE_P, GPIO.HIGH)
+        time.sleep(.1)
+        GPIO.output(FUSE_P, GPIO.LOW)
+        GPIO.output(FLASH_P, GPIO.HIGH)
+        time.sleep(.1)
+        GPIO.output(FLASH_P, GPIO.LOW)
+        GPIO.output(LOCK_P, GPIO.HIGH)
+        time.sleep(.1)
+        GPIO.output(LOCK_P, GPIO.LOW)
+        GPIO.output(LOCK_F, GPIO.HIGH)
+        time.sleep(.1)
+        GPIO.output(LOCK_F, GPIO.LOW)
+        GPIO.output(FLASH_F, GPIO.HIGH)
+        time.sleep(.1)
+        GPIO.output(FLASH_F, GPIO.LOW)        
+        GPIO.output(FUSE_F, GPIO.HIGH)
+        time.sleep(.1)
+        GPIO.output(FUSE_F, GPIO.LOW)
+        
         
 def update_firmware():
         global new_hex
@@ -92,8 +115,21 @@ def update_firmware():
                 #print 'no new hex'
                 copy_flag = False
         elif((new_hex == True) and (copy_flag == False)):
+                blink_circle()
+                blink_circle()
                 print 'new hex found'
                 print firmware_path_media
+                # first, delete the old hex file
+                for root, dirs, files in os.walk('/home/pi'):
+                        for name in files:
+                                #print (os.path.join(root, name))
+                                old_firmware_path = (os.path.join(root, name))
+                                if 'hex' in old_firmware_path:
+                                        print 'old hex file found!!'
+                                        print 'deleting old firmware file:'
+                                        print old_firmware_path
+                                        os.remove(old_firmware_path)
+                                        print 'done'
                 copy_flag = True
                 print 'copying hex file to local folder /home/pi'
                 shutil.copy(firmware_path_media, '/home/pi')
@@ -106,9 +142,20 @@ def shut_down():
         process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
         output = process.communicate()[0]
         print output
-
+        
+def clean_results():
+        f = open('/home/pi/fuse_results.txt', 'w')
+        f.truncate()
+        f.close()
+        f = open('/home/pi/flash_results.txt', 'w')
+        f.truncate()
+        f.close()
+        
 def program():
-        command = "/usr/bin/sudo ./pi_program.sh"
+        clean_results()
+        #command = "/usr/bin/sudo ./pi_program.sh"
+        #command = "sudo ./pi_program.sh"
+        command = "sh /home/pi/pi_program.sh"
         #command = "/usr/bin/sudo avrdude -p atmega328p -C /home/pi/avrdude_gpio.conf -c pi_1 -D -e 2>output1.txt"
         #command = "/usr/bin/sudo dir"
         import subprocess
@@ -124,7 +171,7 @@ def parse_results():
         efuse = False
         flash = False
         lock = False
-        f = open('fuse_results.txt', 'r')
+        f = open('/home/pi/fuse_results.txt', 'r')
         for line in f:
                 if 'avrdude: 1 bytes of hfuse verified' in line:
                         print line
@@ -139,13 +186,14 @@ def parse_results():
                         print line
         f.close()
 
-        f = open('flash_results.txt', 'r')
+        f = open('/home/pi/flash_results.txt', 'r')
         for line in f:
                 if 'avrdude: 32768 bytes of flash verified' in line:
                         print line
                         flash = True
                 elif 'avrdude: 1 bytes of lock verified' in line:
                         print line
+                        lock = True
                 elif 'avrdude: AVR device not responding' in line:
                         print line
         f.close()        
@@ -171,33 +219,37 @@ def toggle_stat_led():
         else:
                 GPIO.output(STAT, GPIO.HIGH)
                 STATLED_ON = True
+
+def blink_all():
+        all_leds_on()
+        time.sleep(.1)
+        all_leds_off()
+        
 while True:
-        toggle_stat_led() 
-        time.sleep(.5)
+        time.sleep(.1)
+        stat_blink_counter += 1
+        if(stat_blink_counter > 5):
+                toggle_stat_led()
+                stat_blink_counter = 0
+        
         update_firmware()
         #print GPIO.input(SHUTDOWN)
-
-        # press once to program, hold down to shutdown
         
         if GPIO.input(SHUTDOWN) == False:
                 counter = 0
                 while GPIO.input(SHUTDOWN) == False:
                         counter += 1
                         print counter
+                        blink_all()
                         time.sleep(.5)
                         if counter > 4:
                                 all_leds_on()
                                 shut_down()
 
         if GPIO.input(CAPSENSE) == True:
-                counter = 0
-                while GPIO.input(CAPSENSE) == True:
-                        counter += 1
-                        print counter
-                        time.sleep(.1)
-                        if counter > 2:
-                                program()
-                                parse_results()
-                                time.sleep(3) # led leds stay on for 3 secs
-                                all_leds_off()
-                                break
+                blink_all()
+                GPIO.output(STAT, GPIO.HIGH) #indicate programming attempt
+                program()
+                parse_results()
+                time.sleep(3) # led leds stay on for 3 secs
+                all_leds_off()
