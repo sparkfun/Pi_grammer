@@ -56,6 +56,10 @@ firmware_path_media = ' '
 new_hex = False
 copy_flag = False
 
+bash_path_media = ' '
+new_bash = False
+copy_flag_bash = False
+
 stat_blink_counter = 0
 
 def all_leds_on():
@@ -97,11 +101,17 @@ def blink_circle():
         GPIO.output(FUSE_F, GPIO.LOW)
         
         
-def update_firmware():
+def update_firmware_and_bash():
         global new_hex
         new_hex = False
         global firmware_path_media
         global copy_flag
+        
+        global new_bash
+        new_bash = False
+        global bash_path_media
+        global copy_flag_bash
+        
         for root, dirs, files in os.walk('/media'):
                 for name in files:
                         #print (os.path.join(root, name))
@@ -111,11 +121,15 @@ def update_firmware():
                                 new_hex = True
                                 #print tempstring
                                 firmware_path_media = tempstring
+                        if 'pi_program.sh' in tempstring:
+                                #print 'new bash file found!!'
+                                new_bash = True
+                                #print tempstring
+                                bash_path_media = tempstring                                
         if(new_hex == False):
                 #print 'no new hex'
                 copy_flag = False
         elif((new_hex == True) and (copy_flag == False)):
-                blink_circle()
                 blink_circle()
                 print 'new hex found'
                 print firmware_path_media
@@ -130,9 +144,24 @@ def update_firmware():
                                         print old_firmware_path
                                         os.remove(old_firmware_path)
                                         print 'done'
-                copy_flag = True
+                copy_flag = True # to avoid copying the file EVERY loop, we only need to do it once
                 print 'copying hex file to local folder /home/pi'
                 shutil.copy(firmware_path_media, '/home/pi')
+                print 'done'
+        if(new_bash == False):
+                #print 'no new bash'
+                copy_flag_bash = False
+        elif((new_bash == True) and (copy_flag_bash == False)):
+                blink_circle()
+                print 'new bash found'
+                print bash_path_media
+                # first, delete the old bash file
+                print 'deleting old bash file: /home/pi/pi_program.sh'
+                os.remove('/home/pi/pi_program.sh')
+                print 'done'            
+                copy_flag_bash = True # to avoid copying the file EVERY loop, we only need to do it once
+                print 'copying bash file to local folder /home/pi'
+                shutil.copy(bash_path_media, '/home/pi')
                 print 'done'
                                 
 def shut_down():
@@ -232,7 +261,7 @@ while True:
                 toggle_stat_led()
                 stat_blink_counter = 0
         
-        update_firmware()
+        update_firmware_and_bash()
         #print GPIO.input(SHUTDOWN)
         
         if GPIO.input(SHUTDOWN) == False:
