@@ -220,6 +220,9 @@ def parse_results():
                 if 'avrdude: 32768 bytes of flash verified' in line:
                         print line
                         flash = True
+                elif 'avrdude: 32652 bytes of flash verified' in line:
+                        print line
+                        flash = True                        
                 elif 'avrdude: 1 bytes of lock verified' in line:
                         print line
                         lock = True
