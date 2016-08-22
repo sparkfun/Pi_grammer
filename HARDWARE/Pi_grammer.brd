@@ -180,7 +180,7 @@ RASPI</text>
 <wire x1="0" y1="29.21" x2="44.45" y2="29.21" width="0.254" layer="21"/>
 <text x="17.78" y="26.67" size="1.778" layer="21" font="vector" ratio="15" align="center-right">LOCK BITS</text>
 <text x="29.21" y="77.47" size="1.778" layer="16" font="vector" ratio="21" rot="MR0" align="center-right">v01</text>
-<text x="43.688" y="13.462" size="0.6096" layer="21" font="vector" ratio="15">10K</text>
+<text x="43.942" y="13.462" size="0.6096" layer="21" font="vector" ratio="15">1K</text>
 <text x="21.59" y="40.64" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="center-right">SUCCESS</text>
 <wire x1="20.32" y1="16.51" x2="17.78" y2="19.05" width="0.6096" layer="21" curve="90"/>
 <wire x1="17.78" y1="19.05" x2="3.81" y2="19.05" width="0.6096" layer="21"/>
@@ -402,6 +402,23 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="0603">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 <package name="0603-RES">
 <wire x1="-1.6002" y1="0.6858" x2="1.6002" y2="0.6858" width="0.0508" layer="39"/>
 <wire x1="1.6002" y1="0.6858" x2="1.6002" y2="-0.6858" width="0.0508" layer="39"/>
@@ -925,8 +942,8 @@ design rules under a new name.</description>
 <element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="" x="44.45" y="8.89" rot="R180">
 <attribute name="PROD_ID" value="SWCH-08247" x="44.45" y="8.89" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="R7" library="SparkFun-Resistors" package="0603-RES" value="10K" x="44.45" y="12.7">
-<attribute name="PROD_ID" value="RES-00824" x="44.45" y="12.7" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<element name="R7" library="SparkFun-Resistors" package="0603" value="1k" x="44.45" y="12.7">
+<attribute name="PROD_ID" value="RES-07856" x="44.45" y="12.7" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="R8" library="SparkFun-Resistors" package="0603-RES" value="1K" x="28.194" y="26.67">
 <attribute name="PROD_ID" value="RES-07856" x="28.194" y="26.67" size="1.27" layer="27" font="vector" ratio="15" display="off"/>
