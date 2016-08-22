@@ -40,8 +40,8 @@ GPIO.setup(FLASH_F, GPIO.OUT)
 GPIO.setup(LOCK_P, GPIO.OUT)
 GPIO.setup(LOCK_F, GPIO.OUT)
 
-#GPIO.setup(SHUTDOWN, GPIO.IN, pull_up_down=GPIO.PUD_UP) # with internal pullup enabled
-GPIO.setup(SHUTDOWN, GPIO.IN) # NO INTERNAL PULLUP
+GPIO.setup(SHUTDOWN, GPIO.IN, pull_up_down=GPIO.PUD_UP) # with internal pullup enabled - trying this out to avoid accidental shutdowns.
+#GPIO.setup(SHUTDOWN, GPIO.IN) # NO INTERNAL PULLUP
 GPIO.setup(CAPSENSE, GPIO.IN)
 
 GPIO.output(STAT, GPIO.LOW)
@@ -256,7 +256,8 @@ def blink_all():
         all_leds_on()
         time.sleep(.1)
         all_leds_off()
-        
+
+time.sleep(3) # let 3.3V line settle to avoid accidental shutdowns
 while True:
         time.sleep(.1)
         stat_blink_counter += 1
