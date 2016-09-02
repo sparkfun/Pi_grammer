@@ -224,8 +224,8 @@ def parse_results():
                 if 'avrdude: writing flash (' in line:  # This is the line that contains the flash file size
                                                         # The complete line looks like this:
                                                         # "avrdude: writing flash (32670 bytes):"
-                        FLASH_SIZE = line[24:29]
-                        #print 'FLASH_SIZE:' + FLASH_SIZE
+                        FLASH_SIZE = line[24:(line.find('byte')-1)]
+                        print 'FLASH_SIZE:' + FLASH_SIZE
                 elif 'avrdude: ' + FLASH_SIZE + ' bytes of flash verified' in line: # Look for complete verification line
                         print line
                         flash = True                       
