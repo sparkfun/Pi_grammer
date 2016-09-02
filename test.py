@@ -216,13 +216,19 @@ def parse_results():
         f.close()
 
         f = open('/home/pi/flash_results.txt', 'r')
+        FLASH_SIZE = '00000'    # the flash size can vary slightly depending on the hex file (I think)
+                                # I've seen 32652, 32768, and 32650 in the three examples I've tried,
+                                # So pulling in this variable became necessary to use in verifying the correct message
+                                # when parsing flash_results.txt
         for line in f:
-                if 'avrdude: 32768 bytes of flash verified' in line:
+                if 'avrdude: writing flash (' in line:  # This is the line that contains the flash file size
+                                                        # The complete line looks like this:
+                                                        # "avrdude: writing flash (32670 bytes):"
+                        FLASH_SIZE = line[24:29]
+                        #print 'FLASH_SIZE:' + FLASH_SIZE
+                elif 'avrdude: ' + FLASH_SIZE + ' bytes of flash verified' in line: # Look for complete verification line
                         print line
-                        flash = True
-                elif 'avrdude: 32652 bytes of flash verified' in line:
-                        print line
-                        flash = True                        
+                        flash = True                       
                 elif 'avrdude: 1 bytes of lock verified' in line:
                         print line
                         lock = True
