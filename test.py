@@ -116,7 +116,7 @@ def update_firmware_and_bash():
                 for name in files:
                         #print (os.path.join(root, name))
                         tempstring = (os.path.join(root, name))
-                        if 'hex' in tempstring:
+                        if 'hex' in tempstring and 'SERIAL_UPLOAD' not in tempstring:
                                 #print 'new hex file found!!'
                                 new_hex = True
                                 #print tempstring
@@ -138,7 +138,7 @@ def update_firmware_and_bash():
                         for name in files:
                                 #print (os.path.join(root, name))
                                 old_firmware_path = (os.path.join(root, name))
-                                if 'hex' in old_firmware_path:
+                                if 'hex' in old_firmware_path and 'SERIAL_UPLOAD' not in old_firmware_path:
                                         print 'old hex file found!!'
                                         print 'deleting old firmware file:'
                                         print old_firmware_path
@@ -192,6 +192,15 @@ def program():
         output = process.communicate()[0]
         print output
         print "...programming done."
+
+def program_serial():
+        print "serial programming beginning..."
+        command = "sh /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh"
+        import subprocess
+        process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+        output = process.communicate()[0]
+        print output
+        print "serial programming done."        
 
 def parse_results():
         #variables to store success/failure of each programming step
@@ -290,5 +299,8 @@ while True:
                 GPIO.output(STAT, GPIO.HIGH) #indicate programming attempt
                 program()
                 parse_results()
-                time.sleep(3) # led leds stay on for 3 secs
+                if os.path.exists('/home/pi/SERIAL_UPLOAD/pi_serial_upload.sh') == True:
+                        program_serial()
+                else:
+                        time.sleep(3) # led leds stay on for 3 secs
                 all_leds_off()
