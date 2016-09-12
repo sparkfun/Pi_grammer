@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -209,6 +209,32 @@ RASPI</text>
 <text x="54.61" y="5.08" size="0.6096" layer="21" font="vector" ratio="15" align="center">GND</text>
 <text x="54.61" y="2.54" size="0.6096" layer="21" font="vector" ratio="15" align="center">NC</text>
 <text x="52.07" y="-21.59" size="1.778" layer="51" font="vector">Pete Lewis</text>
+<circle x="51.054" y="24.13" radius="0.84890625" width="0.254" layer="49"/>
+<circle x="51.054" y="21.5646" radius="0.84890625" width="0.254" layer="49"/>
+<circle x="48.514" y="21.59" radius="0.84890625" width="0.254" layer="49"/>
+<text x="48.133" y="21.4122" size="0.3048" layer="49" font="vector" ratio="15">GND</text>
+<text x="50.5206" y="23.9776" size="0.3048" layer="49" font="vector" ratio="15">GP20</text>
+<text x="50.546" y="21.4122" size="0.3048" layer="49" font="vector" ratio="15">GP21</text>
+<wire x1="52.0192" y1="25.4" x2="54.61" y2="25.4" width="0.2032" layer="49"/>
+<wire x1="54.61" y1="25.4" x2="54.61" y2="17.78" width="0.2032" layer="49"/>
+<wire x1="54.61" y1="17.78" x2="43.18" y2="17.78" width="0.2032" layer="49"/>
+<wire x1="43.18" y1="17.78" x2="43.18" y2="19.685" width="0.2032" layer="49"/>
+<wire x1="43.18" y1="19.685" x2="33.02" y2="19.685" width="0.2032" layer="49"/>
+<wire x1="33.02" y1="19.685" x2="0" y2="19.685" width="0.2032" layer="49"/>
+<wire x1="0" y1="19.685" x2="0" y2="24.13" width="0.2032" layer="49"/>
+<wire x1="0" y1="24.13" x2="44.45" y2="24.13" width="0.2032" layer="49"/>
+<wire x1="44.45" y1="24.13" x2="44.45" y2="25.4" width="0.2032" layer="49"/>
+<wire x1="44.45" y1="25.4" x2="47.5488" y2="25.4" width="0.2032" layer="49"/>
+<wire x1="47.5488" y1="25.4" x2="47.5488" y2="24.1046" width="0.2032" layer="49"/>
+<wire x1="47.5488" y1="24.1046" x2="47.5488" y2="20.5994" width="0.2032" layer="49"/>
+<wire x1="47.5488" y1="20.5994" x2="52.0192" y2="20.6248" width="0.2032" layer="49"/>
+<wire x1="52.0192" y1="20.6248" x2="52.0192" y2="25.4" width="0.2032" layer="49"/>
+<text x="21.209" y="21.8694" size="1.778" layer="49" font="vector" ratio="15" align="center-right">SERIAL UPLOAD</text>
+<wire x1="24.13" y1="20.32" x2="24.13" y2="22.86" width="0.2032" layer="49"/>
+<wire x1="22.86" y1="21.59" x2="25.4" y2="21.59" width="0.2032" layer="49"/>
+<wire x1="38.1" y1="20.32" x2="38.1" y2="22.86" width="0.2032" layer="49"/>
+<wire x1="36.83" y1="21.59" x2="39.37" y2="21.59" width="0.2032" layer="49"/>
+<wire x1="33.02" y1="24.13" x2="33.02" y2="19.685" width="0.254" layer="49"/>
 </plain>
 <libraries>
 <library name="SparkFun-Boards">

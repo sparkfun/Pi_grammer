@@ -38,6 +38,7 @@ local.properties
 *.s#?
 *.job
 *.pro
+*.lck
 
 
 #################
