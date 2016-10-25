@@ -209,6 +209,7 @@ def parse_results():
         efuse = False
         flash = False
         lock = False
+        hash_verified_count = 0 # need to see 3 of these lines in the programming readout when programming an ESP32 chip
         f = open('/home/pi/fuse_results.txt', 'r')
         for line in f:
                 if 'avrdude: 1 bytes of hfuse verified' in line:
@@ -243,20 +244,27 @@ def parse_results():
                         lock = True
                 elif 'avrdude: AVR device not responding' in line:
                         print line
+                elif 'Hash of data verified.' in line:
+                        hash_verified_count += 1
+                        print line
         f.close()        
+
         ## display results on all 6 stat LEDs
-        if((hfuse == True) and (lfuse == True) and (efuse == True)):
-                GPIO.output(FUSE_P, GPIO.HIGH)
-        else:
-                GPIO.output(FUSE_F, GPIO.HIGH)
-        if(flash == True):
+        if(hash_verified_count == 3): # this means we are programming an ESP32, and only care to light up the flash_P led.
                 GPIO.output(FLASH_P, GPIO.HIGH)
-        else:
-                GPIO.output(FLASH_F, GPIO.HIGH)
-        if(lock == True):
-                GPIO.output(LOCK_P, GPIO.HIGH)
-        else:
-                GPIO.output(LOCK_F, GPIO.HIGH)                  
+        else: # everything not an ESP32 - ATmega328 and mega2560 supported
+                if((hfuse == True) and (lfuse == True) and (efuse == True)):
+                        GPIO.output(FUSE_P, GPIO.HIGH)
+                else:
+                        GPIO.output(FUSE_F, GPIO.HIGH)
+                if(flash == True):
+                        GPIO.output(FLASH_P, GPIO.HIGH)
+                else:
+                        GPIO.output(FLASH_F, GPIO.HIGH)
+                if(lock == True):
+                        GPIO.output(LOCK_P, GPIO.HIGH)
+                else:
+                        GPIO.output(LOCK_F, GPIO.HIGH)                  
         
 def toggle_stat_led():
         global STATLED_ON
