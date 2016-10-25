@@ -1,0 +1,1 @@
+Note, the espressif folder and all it's contents must live in the /home/pi folder for the pi_program.sh example to call the correct python moldule esptool.py
