@@ -9,7 +9,7 @@ $firmware .= "/home/pi/$firmware"
 #FUSE BITS
 HIGH_FUSE=0xD6
 LOW_FUSE=0xFF
-EXT_FUSE=0x05 # due to masking, 0x05 = 0xFD
+EXT_FUSE=0x05 # due to masking, 0x05 = 0xFD, 0x07 = 0xFF
 LOCK=0x0F #due to masking, 0x0F = 0xCF
 
 #erase and fuse bits, note the -i 100 to add delay and slow down initial com to fresh chips
