@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -9182,6 +9182,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="SMT-JUMPER_2_NO_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_2_NO_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_2_NO_NO-SILK_ROUND">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.00508125" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0.00508125" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NO_SILK_ROUND">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.00508125" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0.00508125" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SMT-JUMPER_3_NO">
@@ -9199,6 +9264,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="SMT-JUMPER_2_NO">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9224,6 +9299,56 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
+<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
+
+&lt;p&gt;Round pads are easier to solder for beginners, but are a lot larger.&lt;/p&gt;
+&lt;p&gt;SparkFun Product that uses the round pads:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9635,6 +9760,7 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="VCC_Target"/>
 </parts>
 <sheets>
 <sheet>
@@ -9656,26 +9782,27 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <instance part="J2" gate="G$1" x="243.84" y="304.8" rot="R180">
 <attribute name="PROD_ID" x="243.84" y="304.8" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="GND6" gate="1" x="236.22" y="294.64"/>
+<instance part="GND6" gate="1" x="236.22" y="292.1"/>
 <instance part="FRAME1" gate="G$1" x="7.62" y="182.88"/>
 <instance part="FRAME1" gate="V" x="154.94" y="182.88"/>
-<instance part="B1" gate="G$1" x="154.94" y="304.8"/>
-<instance part="GND4" gate="1" x="134.62" y="289.56"/>
-<instance part="GND5" gate="1" x="172.72" y="289.56"/>
-<instance part="SUPPLY1" gate="G$1" x="180.34" y="330.2"/>
-<instance part="SUPPLY4" gate="G$1" x="165.1" y="330.2"/>
-<instance part="JP3" gate="G$1" x="172.72" y="325.12" rot="R90"/>
-<instance part="SUPPLY6" gate="G$1" x="134.62" y="325.12"/>
+<instance part="B1" gate="G$1" x="147.32" y="302.26"/>
+<instance part="GND4" gate="1" x="127" y="287.02"/>
+<instance part="GND5" gate="1" x="165.1" y="287.02"/>
+<instance part="SUPPLY1" gate="G$1" x="172.72" y="340.36"/>
+<instance part="SUPPLY4" gate="G$1" x="157.48" y="340.36"/>
+<instance part="JP3" gate="G$1" x="165.1" y="335.28" rot="R90"/>
+<instance part="SUPPLY6" gate="G$1" x="127" y="322.58"/>
 <instance part="C3" gate="G$1" x="30.48" y="241.3"/>
 <instance part="GND7" gate="1" x="30.48" y="233.68"/>
-<instance part="C4" gate="G$1" x="203.2" y="299.72"/>
-<instance part="GND8" gate="1" x="203.2" y="289.56"/>
-<instance part="C5" gate="G$1" x="215.9" y="302.26"/>
+<instance part="C4" gate="G$1" x="195.58" y="297.18"/>
+<instance part="GND8" gate="1" x="195.58" y="287.02"/>
+<instance part="C5" gate="G$1" x="208.28" y="299.72"/>
 <instance part="C6" gate="G$1" x="17.78" y="243.84"/>
-<instance part="GND10" gate="1" x="215.9" y="289.56"/>
+<instance part="GND10" gate="1" x="208.28" y="287.02"/>
 <instance part="GND11" gate="1" x="17.78" y="233.68"/>
 <instance part="SUPPLY7" gate="G$1" x="17.78" y="248.92"/>
 <instance part="SUPPLY10" gate="G$1" x="30.48" y="248.92"/>
+<instance part="JP1" gate="G$1" x="175.26" y="325.12"/>
 </instances>
 <busses>
 </busses>
@@ -9729,19 +9856,19 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="238.76" y1="299.72" x2="236.22" y2="299.72" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="236.22" y1="299.72" x2="236.22" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="299.72" x2="236.22" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="GND@2"/>
-<wire x1="170.18" y1="304.8" x2="172.72" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="302.26" x2="165.1" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="172.72" y1="304.8" x2="172.72" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="302.26" x2="165.1" y2="289.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="GND"/>
-<wire x1="137.16" y1="304.8" x2="134.62" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="302.26" x2="127" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="134.62" y1="304.8" x2="134.62" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="127" y1="302.26" x2="127" y2="289.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -9751,7 +9878,7 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="203.2" y1="292.1" x2="203.2" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="289.56" x2="195.58" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="-"/>
@@ -9761,7 +9888,7 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <segment>
 <pinref part="C5" gate="G$1" pin="-"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="215.9" y1="292.1" x2="215.9" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="289.56" x2="208.28" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -9773,9 +9900,9 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-<wire x1="180.34" y1="330.2" x2="180.34" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="340.36" x2="172.72" y2="335.28" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="180.34" y1="325.12" x2="177.8" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="335.28" x2="170.18" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -9787,15 +9914,15 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="165.1" y1="330.2" x2="165.1" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="340.36" x2="157.48" y2="335.28" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="325.12" x2="167.64" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="335.28" x2="160.02" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 <pinref part="B1" gate="G$1" pin="LV"/>
-<wire x1="137.16" y1="307.34" x2="134.62" y2="307.34" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="307.34" x2="134.62" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="304.8" x2="127" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="127" y1="304.8" x2="127" y2="322.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
@@ -9825,24 +9952,24 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <net name="SCK_T" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="238.76" y1="304.8" x2="236.22" y2="304.8" width="0.1524" layer="91"/>
-<label x="236.22" y="304.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="304.8" x2="233.68" y2="304.8" width="0.1524" layer="91"/>
+<label x="233.68" y="304.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="302.26" x2="180.34" y2="302.26" width="0.1524" layer="91"/>
-<label x="180.34" y="302.26" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="162.56" y1="299.72" x2="172.72" y2="299.72" width="0.1524" layer="91"/>
+<label x="172.72" y="299.72" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="HV_RXI_2"/>
 </segment>
 </net>
 <net name="MISO_T" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="307.34" x2="236.22" y2="307.34" width="0.1524" layer="91"/>
-<label x="236.22" y="307.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="307.34" x2="233.68" y2="307.34" width="0.1524" layer="91"/>
+<label x="233.68" y="307.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="309.88" x2="180.34" y2="309.88" width="0.1524" layer="91"/>
-<label x="180.34" y="309.88" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="162.56" y1="307.34" x2="172.72" y2="307.34" width="0.1524" layer="91"/>
+<label x="172.72" y="307.34" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="HV_RXI_1"/>
 </segment>
 </net>
@@ -9867,8 +9994,8 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <label x="81.28" y="322.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="127" y1="312.42" x2="137.16" y2="312.42" width="0.1524" layer="91"/>
-<label x="127" y="312.42" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="119.38" y1="309.88" x2="129.54" y2="309.88" width="0.1524" layer="91"/>
+<label x="119.38" y="309.88" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="LV_TXI_1"/>
 </segment>
 </net>
@@ -9889,12 +10016,12 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <net name="RST_T" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="238.76" y1="302.26" x2="236.22" y2="302.26" width="0.1524" layer="91"/>
-<label x="236.22" y="302.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="302.26" x2="233.68" y2="302.26" width="0.1524" layer="91"/>
+<label x="233.68" y="302.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="299.72" x2="180.34" y2="299.72" width="0.1524" layer="91"/>
-<label x="180.34" y="299.72" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="162.56" y1="297.18" x2="172.72" y2="297.18" width="0.1524" layer="91"/>
+<label x="172.72" y="297.18" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="HV_TXO_2"/>
 </segment>
 </net>
@@ -9919,8 +10046,8 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <label x="40.64" y="309.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="299.72" x2="127" y2="299.72" width="0.1524" layer="91"/>
-<label x="127" y="299.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="129.54" y1="297.18" x2="119.38" y2="297.18" width="0.1524" layer="91"/>
+<label x="119.38" y="297.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="LV_TXI_2"/>
 </segment>
 </net>
@@ -9931,8 +10058,8 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <label x="81.28" y="327.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="127" y1="302.26" x2="137.16" y2="302.26" width="0.1524" layer="91"/>
-<label x="127" y="302.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="119.38" y1="299.72" x2="129.54" y2="299.72" width="0.1524" layer="91"/>
+<label x="119.38" y="299.72" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="LV_RXO_2"/>
 </segment>
 </net>
@@ -9943,8 +10070,8 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <label x="81.28" y="325.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="309.88" x2="127" y2="309.88" width="0.1524" layer="91"/>
-<label x="127" y="309.88" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="129.54" y1="307.34" x2="119.38" y2="307.34" width="0.1524" layer="91"/>
+<label x="119.38" y="307.34" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="LV_RXO_1"/>
 </segment>
 </net>
@@ -9979,12 +10106,12 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <net name="MOSI_T" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="309.88" x2="236.22" y2="309.88" width="0.1524" layer="91"/>
-<label x="236.22" y="309.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="309.88" x2="233.68" y2="309.88" width="0.1524" layer="91"/>
+<label x="233.68" y="309.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="312.42" x2="180.34" y2="312.42" width="0.1524" layer="91"/>
-<label x="180.34" y="312.42" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="162.56" y1="309.88" x2="172.72" y2="309.88" width="0.1524" layer="91"/>
+<label x="172.72" y="309.88" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="HV_TXO_1"/>
 </segment>
 </net>
@@ -10033,17 +10160,33 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <net name="N$4" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="HV"/>
-<wire x1="170.18" y1="307.34" x2="172.72" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="304.8" x2="165.1" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="307.34" x2="172.72" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="307.34" x2="203.2" y2="307.34" width="0.1524" layer="91"/>
-<junction x="172.72" y="307.34"/>
+<wire x1="165.1" y1="304.8" x2="165.1" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="325.12" x2="165.1" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="304.8" x2="195.58" y2="304.8" width="0.1524" layer="91"/>
+<junction x="165.1" y="304.8"/>
 <pinref part="C5" gate="G$1" pin="+"/>
-<wire x1="203.2" y1="307.34" x2="215.9" y2="307.34" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="307.34" x2="215.9" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="304.8" x2="208.28" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="304.8" x2="208.28" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="307.34" x2="203.2" y2="304.8" width="0.1524" layer="91"/>
-<junction x="203.2" y="307.34"/>
+<wire x1="195.58" y1="304.8" x2="195.58" y2="302.26" width="0.1524" layer="91"/>
+<junction x="195.58" y="304.8"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="325.12" x2="165.1" y2="325.12" width="0.1524" layer="91"/>
+<junction x="165.1" y="325.12"/>
+</segment>
+</net>
+<net name="VCC_T" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="238.76" y1="297.18" x2="233.68" y2="297.18" width="0.1524" layer="91"/>
+<label x="233.68" y="297.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="325.12" x2="182.88" y2="325.12" width="0.1524" layer="91"/>
+<label x="182.88" y="325.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
