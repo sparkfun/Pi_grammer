@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -7665,7 +7665,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="17" x="-1.27" y="3.81" drill="1.905" diameter="2.286" rot="R180"/>
 <pad name="18" x="1.27" y="3.81" drill="1.905" diameter="0.254"/>
 <pad name="19" x="-1.27" y="1.27" drill="1.905" diameter="2.286" rot="R180"/>
-<pad name="20" x="1.27" y="1.27" drill="1.905" diameter="2.286"/>
+<pad name="20" x="1.27" y="1.27" drill="1.905" diameter="0.254" stop="no"/>
 <pad name="21" x="-1.27" y="-1.27" drill="1.905" diameter="2.286" rot="R180"/>
 <pad name="22" x="1.27" y="-1.27" drill="1.905" diameter="0.254"/>
 <pad name="23" x="-1.27" y="-3.81" drill="1.905" diameter="2.286" rot="R180"/>
@@ -7711,6 +7711,38 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="HV" x="5.08" y="1.27" drill="1.016" diameter="1.8796"/>
 <pad name="HV2" x="5.08" y="3.81" drill="1.016" diameter="1.8796"/>
 <pad name="HV1" x="5.08" y="6.35" drill="1.016" diameter="1.8796"/>
+<wire x1="-6.35" y1="-7.62" x2="-6.35" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="7.62" x2="6.35" y2="7.62" width="0.127" layer="21"/>
+<wire x1="6.35" y1="7.62" x2="6.35" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-7.62" x2="-6.35" y2="-7.62" width="0.127" layer="21"/>
+<text x="-3.81" y="6.35" size="0.8128" layer="21" font="vector" ratio="20">LV1</text>
+<text x="-3.81" y="3.81" size="0.8128" layer="21" font="vector" ratio="20">LV2</text>
+<text x="1.905" y="6.35" size="0.8128" layer="21" font="vector" ratio="20">HV1</text>
+<text x="1.905" y="3.81" size="0.8128" layer="21" font="vector" ratio="20">HV2</text>
+<text x="-3.81" y="1.27" size="0.8128" layer="21" font="vector" ratio="20">LV</text>
+<text x="-3.81" y="-1.27" size="0.8128" layer="21" font="vector" ratio="20">GND</text>
+<text x="-3.81" y="-3.81" size="0.8128" layer="21" font="vector" ratio="20">LV3</text>
+<text x="-3.81" y="-6.35" size="0.8128" layer="21" font="vector" ratio="20">LV4</text>
+<text x="2.54" y="1.27" size="0.8128" layer="21" font="vector" ratio="20">HV</text>
+<text x="1.905" y="-1.27" size="0.8128" layer="21" font="vector" ratio="20">GND</text>
+<text x="1.905" y="-3.81" size="0.8128" layer="21" font="vector" ratio="20">HV3</text>
+<text x="1.905" y="-6.35" size="0.8128" layer="21" font="vector" ratio="20">HV4</text>
+<text x="0" y="7.874" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-7.874" size="0.6096" layer="25" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SPARKFUN_LOGIC_LEVEL_CONVERTER_LOCK">
+<pad name="LV1" x="-5.207" y="6.35" drill="1.016" diameter="1.8796"/>
+<pad name="LV2" x="-4.953" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="LV" x="-5.207" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="GND1" x="-4.953" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="LV3" x="-5.207" y="-3.81" drill="1.016" diameter="1.8796"/>
+<pad name="LV4" x="-4.953" y="-6.35" drill="1.016" diameter="1.8796"/>
+<pad name="HV4" x="5.207" y="-6.35" drill="1.016" diameter="1.8796"/>
+<pad name="HV3" x="4.953" y="-3.81" drill="1.016" diameter="1.8796"/>
+<pad name="GND2" x="5.207" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="HV" x="4.953" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="HV2" x="5.207" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="HV1" x="4.953" y="6.35" drill="1.016" diameter="1.8796"/>
 <wire x1="-6.35" y1="-7.62" x2="-6.35" y2="7.62" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="7.62" x2="6.35" y2="7.62" width="0.127" layer="21"/>
 <wire x1="6.35" y1="7.62" x2="6.35" y2="-7.62" width="0.127" layer="21"/>
@@ -7916,6 +7948,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <description>&lt;h3&gt;SparkFun Logic Level Converter -Bi-Directional &lt;/h3&gt;
 &lt;p&gt;This is the mechnical outline for the 3.3V - 5V bi directional logic level converter. &lt;/p&gt;
 
+&lt;p&gt;*Note, the "LOCK" Package has the header pins staggered by an offset of 5 mils (off center line), so that when you slide a row of standard 0.1" headers into the PTH pads, it will hold position vertically.&lt;/p&gt;
+
+See the follwing turorial for more information on this type of special footprints:
+
+&lt;a href="https://www.sparkfun.com/tutorials/114"&gt;Sneaky Footprints&lt;/a&gt;
+
 
 &lt;b&gt;&lt;p&gt;SparkFun Products:&lt;/b&gt;
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12009”&gt;SparkFun Logic Level Converter - Bi-Directional&lt;/a&gt;&lt;/li&gt;
@@ -7925,6 +7963,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 </gates>
 <devices>
 <device name="" package="SPARKFUN_LOGIC_LEVEL_CONVERTER">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="HV" pad="HV"/>
+<connect gate="G$1" pin="HV_RXI_1" pad="HV2"/>
+<connect gate="G$1" pin="HV_RXI_2" pad="HV3"/>
+<connect gate="G$1" pin="HV_TXO_1" pad="HV1"/>
+<connect gate="G$1" pin="HV_TXO_2" pad="HV4"/>
+<connect gate="G$1" pin="LV" pad="LV"/>
+<connect gate="G$1" pin="LV_RXO_1" pad="LV2"/>
+<connect gate="G$1" pin="LV_RXO_2" pad="LV3"/>
+<connect gate="G$1" pin="LV_TXI_1" pad="LV1"/>
+<connect gate="G$1" pin="LV_TXI_2" pad="LV4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LOCK" package="SPARKFUN_LOGIC_LEVEL_CONVERTER_LOCK">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND1"/>
 <connect gate="G$1" pin="GND@2" pad="GND2"/>
@@ -9561,7 +9618,7 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 </part>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="B1" library="SparkFun-Boards" deviceset="SPARKFUN_LOGIC_LEVEL_CONVERTER" device=""/>
+<part name="B1" library="SparkFun-Boards" deviceset="SPARKFUN_LOGIC_LEVEL_CONVERTER" device="LOCK" value="SPARKFUN_LOGIC_LEVEL_CONVERTERLOCK"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -9645,8 +9702,7 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="40.64" y1="287.02" x2="40.64" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="289.56" x2="40.64" y2="292.1" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="292.1" x2="40.64" y2="294.64" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="294.64" x2="40.64" y2="297.18" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="297.18" x2="40.64" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="294.64" x2="40.64" y2="299.72" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="299.72" x2="40.64" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="302.26" x2="40.64" y2="304.8" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="304.8" x2="45.72" y2="304.8" width="0.1524" layer="91"/>
@@ -9654,8 +9710,6 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="45.72" y1="302.26" x2="40.64" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="GND@14"/>
 <wire x1="45.72" y1="299.72" x2="40.64" y2="299.72" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="GND@20"/>
-<wire x1="45.72" y1="297.18" x2="40.64" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="GND@25"/>
 <wire x1="45.72" y1="294.64" x2="40.64" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="GND@30"/>
@@ -9668,7 +9722,6 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <junction x="40.64" y="289.56"/>
 <junction x="40.64" y="292.1"/>
 <junction x="40.64" y="294.64"/>
-<junction x="40.64" y="297.18"/>
 <junction x="40.64" y="299.72"/>
 <junction x="40.64" y="302.26"/>
 </segment>

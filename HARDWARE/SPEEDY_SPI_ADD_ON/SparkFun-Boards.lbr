@@ -294,7 +294,7 @@
 <pad name="17" x="-1.27" y="3.81" drill="1.905" diameter="2.286" rot="R180"/>
 <pad name="18" x="1.27" y="3.81" drill="1.905" diameter="0.254"/>
 <pad name="19" x="-1.27" y="1.27" drill="1.905" diameter="2.286" rot="R180"/>
-<pad name="20" x="1.27" y="1.27" drill="1.905" diameter="2.286"/>
+<pad name="20" x="1.27" y="1.27" drill="1.905" diameter="0.254" stop="no"/>
 <pad name="21" x="-1.27" y="-1.27" drill="1.905" diameter="2.286" rot="R180"/>
 <pad name="22" x="1.27" y="-1.27" drill="1.905" diameter="0.254"/>
 <pad name="23" x="-1.27" y="-3.81" drill="1.905" diameter="2.286" rot="R180"/>
