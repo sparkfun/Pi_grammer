@@ -9909,26 +9909,62 @@ RASPI (3.3V) --&gt;&gt; TARGET</text>
 <wire x1="172.72" y1="325.12" x2="175.26" y2="325.12" width="0.1524" layer="91"/>
 <label x="175.26" y="325.12" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="269.24" x2="236.22" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="D10" gate="G$1" pin="A"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="259.08" x2="236.22" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SERIAL_UPLOAD_PASS" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="269.24" x2="223.52" y2="269.24" width="0.1524" layer="91"/>
+<label x="223.52" y="269.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="GP23"/>
+<wire x1="63.5" y1="297.18" x2="68.58" y2="297.18" width="0.1524" layer="91"/>
+<label x="68.58" y="297.18" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SERIAL_UPLOAD_FAIL" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="259.08" x2="223.52" y2="259.08" width="0.1524" layer="91"/>
+<label x="223.52" y="259.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="GP24"/>
+<wire x1="63.5" y1="294.64" x2="68.58" y2="294.64" width="0.1524" layer="91"/>
+<label x="68.58" y="294.64" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="276.86" x2="180.34" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="279.4" x2="167.64" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="167.64" y1="279.4" x2="167.64" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="279.4" x2="180.34" y2="281.94" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="281.94" x2="177.8" y2="281.94" width="0.1524" layer="91"/>
-<junction x="180.34" y="279.4"/>
-<label x="177.8" y="281.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
+<wire x1="167.64" y1="279.4" x2="157.48" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="279.4" x2="157.48" y2="281.94" width="0.1524" layer="91"/>
+<junction x="167.64" y="279.4"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="246.38" x2="142.24" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="248.92" x2="154.94" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="248.92" x2="154.94" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="279.4" x2="154.94" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="279.4" x2="154.94" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="281.94" x2="154.94" y2="309.88" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="309.88" x2="154.94" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="325.12" x2="154.94" y2="332.74" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="332.74" x2="154.94" y2="340.36" width="0.1524" layer="91"/>
@@ -9951,34 +9987,8 @@ RASPI (3.3V) --&gt;&gt; TARGET</text>
 <junction x="154.94" y="340.36"/>
 <junction x="154.94" y="332.74"/>
 <junction x="154.94" y="325.12"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="D9" gate="G$1" pin="A"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="269.24" x2="236.22" y2="269.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="D10" gate="G$1" pin="A"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="259.08" x2="236.22" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SERIAL_UPLOAD_PASS" class="0">
-<segment>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="269.24" x2="223.52" y2="269.24" width="0.1524" layer="91"/>
-<label x="223.52" y="269.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SERIAL_UPLOAD_FAIL" class="0">
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="259.08" x2="223.52" y2="259.08" width="0.1524" layer="91"/>
-<label x="223.52" y="259.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="281.94" x2="154.94" y2="281.94" width="0.1524" layer="91"/>
+<junction x="154.94" y="281.94"/>
 </segment>
 </net>
 </nets>
