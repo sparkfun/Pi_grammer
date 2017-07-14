@@ -23,6 +23,8 @@ FLASH_P = 31
 FLASH_F = 11
 LOCK_P = 32
 LOCK_F = 22
+SERIAL_P = 16
+SERIAL_F = 18
 
 CAPSENSE = 33
 SHUTDOWN = 29
@@ -39,6 +41,8 @@ GPIO.setup(FLASH_P, GPIO.OUT)
 GPIO.setup(FLASH_F, GPIO.OUT)
 GPIO.setup(LOCK_P, GPIO.OUT)
 GPIO.setup(LOCK_F, GPIO.OUT)
+GPIO.setup(SERIAL_P, GPIO.OUT)
+GPIO.setup(SERIAL_F, GPIO.OUT)
 
 GPIO.setup(SHUTDOWN, GPIO.IN, pull_up_down=GPIO.PUD_UP) # with internal pullup enabled - trying this out to avoid accidental shutdowns.
 #GPIO.setup(SHUTDOWN, GPIO.IN) # NO INTERNAL PULLUP
@@ -51,6 +55,8 @@ GPIO.output(FLASH_P, GPIO.LOW)
 GPIO.output(FLASH_F, GPIO.LOW)
 GPIO.output(LOCK_P, GPIO.LOW)
 GPIO.output(LOCK_F, GPIO.LOW)
+GPIO.output(SERIAL_P, GPIO.LOW)
+GPIO.output(SERIAL_F, GPIO.LOW)
 
 firmware_path_media = ' '
 new_hex = False
@@ -70,6 +76,8 @@ def all_leds_on():
         GPIO.output(FLASH_F, GPIO.HIGH)
         GPIO.output(LOCK_P, GPIO.HIGH)
         GPIO.output(LOCK_F, GPIO.HIGH)
+        GPIO.output(SERIAL_P, GPIO.HIGH)
+        GPIO.output(SERIAL_F, GPIO.HIGH)
 
 def all_leds_off():
         GPIO.output(STAT, GPIO.LOW)
@@ -79,6 +87,8 @@ def all_leds_off():
         GPIO.output(FLASH_F, GPIO.LOW)
         GPIO.output(LOCK_P, GPIO.LOW)
         GPIO.output(LOCK_F, GPIO.LOW)
+        GPIO.output(SERIAL_P, GPIO.LOW)
+        GPIO.output(SERIAL_F, GPIO.LOW)
 
 def blink_circle():
         GPIO.output(FUSE_P, GPIO.HIGH)
@@ -179,6 +189,9 @@ def clean_results():
         f = open('/home/pi/flash_results.txt', 'w')
         f.truncate()
         f.close()
+        f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', 'w')
+        f.truncate()
+        f.close()
         
 def program():
         clean_results()
@@ -264,7 +277,37 @@ def parse_results():
                 if(lock == True):
                         GPIO.output(LOCK_P, GPIO.HIGH)
                 else:
-                        GPIO.output(LOCK_F, GPIO.HIGH)                  
+                        GPIO.output(LOCK_F, GPIO.HIGH)
+
+def parse_results_serial():
+        #variables to store success/failure of serial flash writing
+        # NOTE, I am NOT verifying flash on serial upload to decrease programming time by 50%
+        # So we are going to show a successful serail program, but only seeing that it was written
+        serial_flash_written = False
+
+        f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', 'r')
+        FLASH_SIZE = '00000'    # the flash size can vary
+
+        for line in f:
+                if 'avrdude: writing flash (' in line:  # This is the line that contains the flash file size
+                                                        # The complete line looks like this:
+                                                        # "avrdude: writing flash (32670 bytes):"
+                        FLASH_SIZE = line[24:(line.find('byte')-1)]
+                        print 'FLASH_SIZE:' + FLASH_SIZE
+                elif 'avrdude: ' + FLASH_SIZE + ' bytes of flash written' in line: # Look for complete line 
+                        print line
+                        serial_flash_written = True                       
+                elif 'avrdude: AVR device not responding' in line:
+                        print line
+        f.close()        
+
+        ## display results on serial upload LEDs
+
+        if(serial_flash_written == True):
+            GPIO.output(SERIAL_P, GPIO.HIGH)
+            print 'Serial Write success!!'
+        else:
+            GPIO.output(SERIAL_F, GPIO.HIGH)                               
         
 def toggle_stat_led():
         global STATLED_ON
@@ -309,6 +352,8 @@ while True:
                 parse_results()
                 if os.path.exists('/home/pi/SERIAL_UPLOAD/pi_serial_upload.sh') == True:
                         program_serial()
+                        parse_results_serial()
+                        time.sleep(3) # led leds stay on for 3 secs
                 else:
                         time.sleep(3) # led leds stay on for 3 secs
                 all_leds_off()
