@@ -1,0 +1,12 @@
+
+avrdude: Version 6.1, compiled on Jul  7 2015 at 10:29:47
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "/usr/share/arduino/hardware/tools/avrdude.conf"
+         User configuration file is "/root/.avrduderc"
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/ttyUSB0
+         Using Programmer              : wiring
+         Overriding Baud Rate          : 115200

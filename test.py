@@ -68,6 +68,8 @@ copy_flag_bash = False
 
 stat_blink_counter = 0
 
+LOCK_BITS_PASS = False #Used to know if lock bits programming passed or failed, and then determine if we should even both carrying on with Serial upload attempts
+
 def all_leds_on():
         GPIO.output(STAT, GPIO.HIGH)
         GPIO.output(FUSE_P, GPIO.HIGH)
@@ -192,6 +194,9 @@ def clean_results():
         f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', 'w')
         f.truncate()
         f.close()
+        f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt', 'w')
+        f.truncate()
+        f.close()        
         
 def program():
         clean_results()
@@ -207,13 +212,26 @@ def program():
         print "...programming done."
 
 def program_serial():
+        serial_hopeful = False
         print "serial programming beginning..."
         command = "sh /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh"
         import subprocess
         process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
-        output = process.communicate()[0]
-        print output
-        print "serial programming done."        
+        #output = process.communicate()[0]
+        #print output
+        time.sleep(1)
+        shutil.copy('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', '/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt')
+        f_temp = open('/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt', 'r')
+        for line in f_temp:
+                if 'avrdude: AVR device initialized and ready to accept instructions' in line:
+                        serial_hopeful = True
+                        print "Serial Upload in progress and looking hopeful :)"
+                        output = process.communicate()[0] #This basically makes us what until the communication from the programming subprocess is done
+                        print "serial upload done."
+        if (serial_hopeful == False):
+                process.terminate()
+                print "Serial Upload failure... killing subprocess and moving on"
+                        
 
 def parse_results():
         #variables to store success/failure of each programming step
@@ -222,6 +240,8 @@ def parse_results():
         efuse = False
         flash = False
         lock = False
+        global LOCK_BITS_PASS
+        LOCK_BITS_PASS = False
         hash_verified_count = 0 # need to see 3 of these lines in the programming readout when programming an ESP32 chip
         f = open('/home/pi/fuse_results.txt', 'r')
         for line in f:
@@ -255,6 +275,7 @@ def parse_results():
                 elif 'avrdude: 1 bytes of lock verified' in line:
                         print line
                         lock = True
+                        LOCK_BITS_PASS = True
                 elif 'avrdude: AVR device not responding' in line:
                         print line
                 elif 'Hash of data verified.' in line:
@@ -350,7 +371,7 @@ while True:
                 GPIO.output(STAT, GPIO.HIGH) #indicate programming attempt
                 program()
                 parse_results()
-                if os.path.exists('/home/pi/SERIAL_UPLOAD/pi_serial_upload.sh') == True:
+                if ((os.path.exists('/home/pi/SERIAL_UPLOAD/pi_serial_upload.sh') == True) and (LOCK_BITS_PASS == True)):
                         program_serial()
                         parse_results_serial()
                         time.sleep(3) # led leds stay on for 3 secs
