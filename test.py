@@ -191,12 +191,13 @@ def clean_results():
         f = open('/home/pi/flash_results.txt', 'w')
         f.truncate()
         f.close()
-        f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', 'w')
-        f.truncate()
-        f.close()
-        f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt', 'w')
-        f.truncate()
-        f.close()        
+        if (os.path.exists('/home/pi/SERIAL_UPLOAD/pi_serial_upload.sh') == True):
+                f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', 'w')
+                f.truncate()
+                f.close()
+                f = open('/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt', 'w')
+                f.truncate()
+                f.close()        
         
 def program():
         clean_results()
