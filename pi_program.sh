@@ -6,6 +6,9 @@ echo "Programming beginning..."
 firmware=$(find /home/pi/*.hex)
 $firmware .= "/home/pi/$firmware"
 
+#CHIP
+CHIP=atmega2560
+
 #FUSE BITS
 HIGH_FUSE=0xD8
 LOW_FUSE=0xFF
@@ -13,7 +16,7 @@ EXT_FUSE=0xFD # due to masking, 0x05 = 0xFD, 0x07 = 0xFF, ***Note on an ATMEGA25
 LOCK=0x0F # due to masking, 0x0F = 0xCF
 
 #erase and then write FUSE bits
-sudo avrdude -p atmega2560 -C /home/pi/avrdude_gpio.conf -c linuxspi -P /dev/spidev0.0 -b 125000 -D -v -e -u -U hfuse:w:$HIGH_FUSE:m -u -U lfuse:w:$LOW_FUSE:m -u -U efuse:w:$EXT_FUSE:m 2>/home/pi/fuse_results.txt
+sudo avrdude -p $CHIP -C /home/pi/avrdude_gpio.conf -c linuxspi -P /dev/spidev0.0 -b 125000 -D -v -e -u -U hfuse:w:$HIGH_FUSE:m -u -U lfuse:w:$LOW_FUSE:m -u -U efuse:w:$EXT_FUSE:m 2>/home/pi/fuse_results.txt
 
 sudo gpio -g mode 26 output
 sudo gpio -g write 26 0
@@ -22,4 +25,4 @@ sudo gpio -g write 26 1
 sleep 0.1
 
 #program flash and lock bits
-sudo avrdude -p atmega2560 -C /home/pi/avrdude_gpio.conf -c linuxspi -P /dev/spidev0.0 -b 2000000 -D -v -u -U flash:w:$firmware:i -u -U lock:w:$LOCK:m 2>/home/pi/flash_results.txt
+sudo avrdude -p $CHIP -C /home/pi/avrdude_gpio.conf -c linuxspi -P /dev/spidev0.0 -b 2000000 -D -v -u -U flash:w:$firmware:i -u -U lock:w:$LOCK:m 2>/home/pi/flash_results.txt
