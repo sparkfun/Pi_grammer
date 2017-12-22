@@ -15,6 +15,7 @@ import shutil
 import serial
 import time
 import RPi.GPIO as GPIO
+import filecmp
 
 STAT = 7
 FUSE_P = 15
@@ -115,7 +116,13 @@ def blink_circle():
         GPIO.output(FUSE_F, GPIO.HIGH)
         time.sleep(.1)
         GPIO.output(FUSE_F, GPIO.LOW)
-        
+
+def relaunch_python():
+        command = "sh /home/pi/relaunch_python.sh"
+        import subprocess
+        process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+        output = process.communicate()[0]
+        print output     
         
 def update_firmware_and_bash_and_test_dot_py():
         global new_hex
@@ -149,7 +156,8 @@ def update_firmware_and_bash_and_test_dot_py():
                                 bash_path_media = tempstring
                         if 'test.py' in tempstring:
                                 #print 'new test.py file found!!'
-                                new_test_dot_py = True
+                                if(filecmp.cmp(tempstring, '/home/pi/test.py') == False):
+                                               new_test_dot_py = True
                                 #print tempstring
                                 test_dot_py_path_media = tempstring                                  
         if(new_hex == False):
@@ -204,6 +212,7 @@ def update_firmware_and_bash_and_test_dot_py():
                 print 'copying test.py file to local folder /home/pi'
                 shutil.copy(test_dot_py_path_media, '/home/pi')
                 print 'done'
+                relaunch_python()
                 
 def shut_down():
         print "shutting down"
