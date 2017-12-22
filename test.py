@@ -66,6 +66,10 @@ bash_path_media = ' '
 new_bash = False
 copy_flag_bash = False
 
+test_dot_py_path_media = ' '
+new_test_dot_py = False
+copy_flag_test_dot_py = False
+
 stat_blink_counter = 0
 
 LOCK_BITS_PASS = False #Used to know if lock bits programming passed or failed, and then determine if we should even both carrying on with Serial upload attempts
@@ -113,7 +117,7 @@ def blink_circle():
         GPIO.output(FUSE_F, GPIO.LOW)
         
         
-def update_firmware_and_bash():
+def update_firmware_and_bash_and_test_dot_py():
         global new_hex
         new_hex = False
         global firmware_path_media
@@ -123,6 +127,11 @@ def update_firmware_and_bash():
         new_bash = False
         global bash_path_media
         global copy_flag_bash
+        
+        global new_test_dot_py
+        new_test_dot_py = False
+        global test_dot_py_path_media
+        global copy_flag_test_dot_py  
         
         for root, dirs, files in os.walk('/media'):
                 for name in files:
@@ -137,7 +146,12 @@ def update_firmware_and_bash():
                                 #print 'new bash file found!!'
                                 new_bash = True
                                 #print tempstring
-                                bash_path_media = tempstring                                
+                                bash_path_media = tempstring
+                        if 'test.py' in tempstring:
+                                #print 'new test.py file found!!'
+                                new_test_dot_py = True
+                                #print tempstring
+                                test_dot_py_path_media = tempstring                                  
         if(new_hex == False):
                 #print 'no new hex'
                 copy_flag = False
@@ -175,7 +189,22 @@ def update_firmware_and_bash():
                 print 'copying bash file to local folder /home/pi'
                 shutil.copy(bash_path_media, '/home/pi')
                 print 'done'
-                                
+        if(new_test_dot_py == False):
+                #print 'no new bash'
+                copy_flag_test_dot_py = False
+        elif((new_test_dot_py == True) and (copy_flag_test_dot_py == False)):
+                blink_circle()
+                print 'new test.py found'
+                print test_dot_py_path_media
+                # first, delete the old bash file
+                print 'deleting old test.py file: /home/pi/test.py'
+                os.remove('/home/pi/test.py')
+                print 'done'            
+                copy_flag_test_dot_py = True # to avoid copying the file EVERY loop, we only need to do it once
+                print 'copying test.py file to local folder /home/pi'
+                shutil.copy(test_dot_py_path_media, '/home/pi')
+                print 'done'
+                
 def shut_down():
         print "shutting down"
         command = "/usr/bin/sudo /sbin/shutdown -h now"
@@ -353,7 +382,7 @@ while True:
                 toggle_stat_led()
                 stat_blink_counter = 0
         
-        update_firmware_and_bash()
+        update_firmware_and_bash_and_test_dot_py()
         #print GPIO.input(SHUTDOWN)
         
         if GPIO.input(SHUTDOWN) == False:
