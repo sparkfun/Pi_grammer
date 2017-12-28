@@ -6,8 +6,13 @@ echo "Programming beginning..."
 firmware=$(find /home/pi/*.hex)
 $firmware .= "/home/pi/$firmware"
 
-#CHIP
+# DEVICE 
+# Here are some commonly used "part no"s in avrdude at SFE
+# UN-comment the one you wish to use, or plug in something different
+# Use "avrdude -p?" for a list of supported devices
 DEVICE=atmega328p
+#DEVICE=m32u4
+#DEVICE=t2313
 
 #FUSE BITS
 HIGH_FUSE=0xD8
