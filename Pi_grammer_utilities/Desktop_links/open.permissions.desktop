@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Open Permissions
+Comment=hey
+Exec=/home/pi/Pi_grammer_utilities/open.permissions.sh
+Icon=
+Terminal=true
+Type=Application
