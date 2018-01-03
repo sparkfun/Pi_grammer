@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Edit test.py
+Comment=heyhey
+Exec=/home/pi/Pi_grammer_utilities/edit.test.py.sh
+Icon=
+Terminal=true
+Type=Application

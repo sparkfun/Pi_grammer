@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Kill Python
+Comment=heyhey
+Exec=/home/pi/Pi_grammer_utilities/killall.python.sh
+Icon=
+Terminal=true
+Type=Application

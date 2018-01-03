@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Start test.py
+Comment=hey
+Exec=/home/pi/Pi_grammer_utilities/start.test.sh
+Icon=
+Terminal=true
+Type=Application
