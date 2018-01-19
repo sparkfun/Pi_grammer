@@ -250,6 +250,14 @@ def program():
         print output
         print "...programming done."
 
+def killall_avrdude():
+        command = "sudo killall avrdude"
+        import subprocess
+        process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+        output = process.communicate()[0]
+        print output
+        print "...killing all avrdude."	
+
 def program_serial():
         serial_hopeful = False
         print "serial programming beginning..."
@@ -269,6 +277,7 @@ def program_serial():
                         print "serial upload done."
         if (serial_hopeful == False):
                 process.terminate()
+		killall_avrdude()
                 print "Serial Upload failure... killing subprocess and moving on"
                         
 
