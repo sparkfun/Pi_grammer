@@ -266,7 +266,7 @@ def program_serial():
         process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
         #output = process.communicate()[0]
         #print output
-        time.sleep(1)
+        time.sleep(1.5) # WAIT for serial upload to either show successful ping to target (or to not, and indicate that this isn't very hopeful)
         shutil.copy('/home/pi/SERIAL_UPLOAD/serial_upload_results.txt', '/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt')
         f_temp = open('/home/pi/SERIAL_UPLOAD/serial_upload_results_temp.txt', 'r')
         for line in f_temp:
