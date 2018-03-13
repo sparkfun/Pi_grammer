@@ -26,6 +26,7 @@ LOCK_P = 32
 LOCK_F = 22
 SERIAL_P = 16
 SERIAL_F = 18
+PGM_SWITCH = 36
 
 CAPSENSE = 33
 SHUTDOWN = 29
@@ -44,6 +45,7 @@ GPIO.setup(LOCK_P, GPIO.OUT)
 GPIO.setup(LOCK_F, GPIO.OUT)
 GPIO.setup(SERIAL_P, GPIO.OUT)
 GPIO.setup(SERIAL_F, GPIO.OUT)
+GPIO.setup(PGM_SWITCH, GPIO.OUT)
 
 GPIO.setup(SHUTDOWN, GPIO.IN, pull_up_down=GPIO.PUD_UP) # with internal pullup enabled - trying this out to avoid accidental shutdowns.
 #GPIO.setup(SHUTDOWN, GPIO.IN) # NO INTERNAL PULLUP
@@ -58,6 +60,7 @@ GPIO.output(LOCK_P, GPIO.LOW)
 GPIO.output(LOCK_F, GPIO.LOW)
 GPIO.output(SERIAL_P, GPIO.LOW)
 GPIO.output(SERIAL_F, GPIO.LOW)
+GPIO.output(PGM_SWITCH, GPIO.LOW) # LOW is OFF, this is active high, hardware has 10K pullup
 
 firmware_path_media = ' '
 new_hex = False
@@ -238,6 +241,9 @@ def clean_results():
                 f.close()        
         
 def program():
+        #GPIO.setup(PGM_SWITCH, GPIO.IN)
+	GPIO.output(PGM_SWITCH, GPIO.HIGH)
+	time.sleep(.1)        
         clean_results()
         #command = "/usr/bin/sudo ./pi_program.sh"
         #command = "sudo ./pi_program.sh"
@@ -249,6 +255,9 @@ def program():
         output = process.communicate()[0]
         print output
         print "...programming done."
+        #GPIO.setup(PGM_SWITCH, GPIO.OUT)
+	GPIO.output(PGM_SWITCH, GPIO.LOW) # LOW is OFF, this is active high, hardware has 10K pullup
+        
 
 def killall_avrdude():
         command = "sudo killall avrdude"
