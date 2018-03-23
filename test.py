@@ -429,6 +429,8 @@ while True:
                 program()
                 parse_results()
                 if ((os.path.exists('/home/pi/SERIAL_UPLOAD/pi_serial_upload.sh') == True) and (LOCK_BITS_PASS == True)):
+                        # time.sleep(1) # Delay to allow com port enumeration.
+                        # Note, this delay is only needed with micros that have USB capabilities (like the atmega32u4)
                         program_serial()
                         parse_results_serial()
                         time.sleep(3) # led leds stay on for 3 secs
