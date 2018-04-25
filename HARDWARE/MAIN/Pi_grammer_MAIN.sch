@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -21100,54 +21100,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="Testing">
 <packages>
-<package name="UDFN/USON_8_PAD">
-<smd name="1" x="-0.75" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="2" x="-0.25" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="3" x="0.25" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="4" x="0.75" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="5" x="0.75" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="6" x="0.25" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="7" x="-0.25" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="8" x="-0.75" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
-<wire x1="1.114" y1="0.8218" x2="1.114" y2="-0.7282" width="0.127" layer="21"/>
-<wire x1="-1.1032" y1="0.8004" x2="-1.1032" y2="-0.7496" width="0.127" layer="21"/>
-<text x="-1.7166" y="1.3968" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-2.1484" y="-2.2984" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0" layer="51"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0" layer="51"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0" layer="51"/>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0" layer="51"/>
-<circle x="-1.1938" y="-1.1684" radius="0.0762" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="1.3" dy="0.8" layer="1" cream="no"/>
-<rectangle x1="-0.5588" y1="0.0508" x2="-0.254" y2="0.3302" layer="31"/>
-<rectangle x1="0.246" y1="0.0548" x2="0.5508" y2="0.3342" layer="31"/>
-<rectangle x1="0.246" y1="-0.3262" x2="0.5508" y2="-0.0468" layer="31"/>
-<rectangle x1="-0.5668" y1="-0.3262" x2="-0.262" y2="-0.0468" layer="31"/>
-<rectangle x1="-0.1604" y1="-0.1484" x2="0.1444" y2="0.131" layer="31"/>
-</package>
-<package name="SOT23-6">
-<circle x="-0.95" y="-0.3" radius="0.1436" width="0.2032" layer="21"/>
-<wire x1="1.4224" y1="0.4294" x2="1.4224" y2="-0.4294" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.4294" x2="-1.4224" y2="0.4294" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
-<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
-<smd name="1" x="-0.95" y="-1.3751" dx="0.55" dy="1.35" layer="1"/>
-<smd name="2" x="0" y="-1.3751" dx="0.55" dy="1.35" layer="1"/>
-<smd name="3" x="0.95" y="-1.3751" dx="0.55" dy="1.35" layer="1"/>
-<smd name="4" x="0.95" y="1.3751" dx="0.55" dy="1.35" layer="1"/>
-<smd name="5" x="0" y="1.3751" dx="0.55" dy="1.35" layer="1"/>
-<smd name="6" x="-0.95" y="1.3751" dx="0.55" dy="1.35" layer="1"/>
-<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0525" y="0.0095" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="SO14">
 <wire x1="4.699" y1="1.9558" x2="-3.429" y2="1.9558" width="0.2032" layer="21"/>
 <wire x1="4.699" y1="-1.9558" x2="5.08" y2="-1.5748" width="0.2032" layer="21" curve="90"/>
@@ -21194,20 +21146,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="AT42QT1010">
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<pin name="OUT" x="-17.78" y="5.08" length="middle"/>
-<pin name="SNS" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="SNSK" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="SYNC/MODE" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="VDD" x="0" y="15.24" length="middle" rot="R270"/>
-<pin name="VSS" x="-17.78" y="-5.08" length="middle"/>
-<text x="-12.7" y="11.176" size="1.27" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="MUX_1:1_X4">
 <pin name="1Y" x="-15.24" y="7.62" length="short"/>
 <pin name="1E" x="-15.24" y="5.08" length="short"/>
@@ -21252,39 +21190,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AT42QT1010">
-<gates>
-<gate name="G$1" symbol="AT42QT1010" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT23" package="SOT23-6">
-<connects>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$1" pin="SNS" pad="4"/>
-<connect gate="G$1" pin="SNSK" pad="3"/>
-<connect gate="G$1" pin="SYNC/MODE" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="UDFN" package="UDFN/USON_8_PAD">
-<connects>
-<connect gate="G$1" pin="OUT" pad="5"/>
-<connect gate="G$1" pin="SNS" pad="8"/>
-<connect gate="G$1" pin="SNSK" pad="1"/>
-<connect gate="G$1" pin="SYNC/MODE" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="74LVC4066_MUX_1:1_X4">
 <gates>
 <gate name="G$1" symbol="MUX_1:1_X4" x="0" y="0"/>
@@ -21628,6 +21533,150 @@ Switches electronic signals</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Sensors">
+<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
+This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="UDFN/USON_8_PAD">
+<smd name="1" x="-0.75" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="2" x="-0.25" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="3" x="0.25" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="4" x="0.75" y="-0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="0.75" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="7" x="-0.25" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="-0.75" y="0.8516" dx="0.3" dy="0.25" layer="1" rot="R90"/>
+<wire x1="1.114" y1="0.8218" x2="1.114" y2="-0.7282" width="0.127" layer="21"/>
+<wire x1="-1.1032" y1="0.8004" x2="-1.1032" y2="-0.7496" width="0.127" layer="21"/>
+<text x="-1.7166" y="1.3968" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.1484" y="-2.2984" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0" layer="51"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0" layer="51"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0" layer="51"/>
+<circle x="-1.1938" y="-1.1684" radius="0.0762" width="0.127" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="1.3" dy="0.8" layer="1" cream="no"/>
+<rectangle x1="-0.5588" y1="0.0508" x2="-0.254" y2="0.3302" layer="31"/>
+<rectangle x1="0.246" y1="0.0548" x2="0.5508" y2="0.3342" layer="31"/>
+<rectangle x1="0.246" y1="-0.3262" x2="0.5508" y2="-0.0468" layer="31"/>
+<rectangle x1="-0.5668" y1="-0.3262" x2="-0.262" y2="-0.0468" layer="31"/>
+<rectangle x1="-0.1604" y1="-0.1484" x2="0.1444" y2="0.131" layer="31"/>
+</package>
+<package name="SOT23-6">
+<description>&lt;h3&gt;6-Pin SOT23-6&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Capacitive/AT42QT1010_Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 6&lt;/li&gt;
+&lt;li&gt;Area: 2.6 x 2.9 x 1.45 mm&lt;/li&gt;
+&lt;li&gt;Pitch: 0.95 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AT42QT1012&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="1.55" y1="0.95" x2="-1.55" y2="0.95" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="0.95" x2="-1.55" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="-0.95" x2="1.55" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="1.55" y1="-0.95" x2="1.55" y2="0.95" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="1" x2="-1.6" y2="1" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="1" x2="-1.6" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="1" x2="1.6" y2="1" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1" x2="1.6" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-0.7" x2="1.6" y2="-1" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-1" x2="1.3" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="-1" x2="-1.3" y2="-1" width="0.2032" layer="21"/>
+<circle x="-1" y="-0.5" radius="0.2236" width="0.2032" layer="51"/>
+<smd name="4" x="0.95" y="1.3" dx="0.8" dy="0.51" layer="1" rot="R90"/>
+<smd name="5" x="0" y="1.3" dx="0.8" dy="0.51" layer="1" rot="R90"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.8" dy="0.51" layer="1" rot="R90"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.8" dy="0.51" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-1.3" dx="0.8" dy="0.51" layer="1" rot="R90"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.8" dy="0.51" layer="1" rot="R90"/>
+<text x="-1.778" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.778" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+<circle x="-2.016" y="-0.8175" radius="0.254" width="0" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AT42QT1010">
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<pin name="OUT" x="-17.78" y="5.08" length="middle"/>
+<pin name="SNS" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SNSK" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="SYNC/MODE" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="0" y="15.24" length="middle" rot="R270"/>
+<pin name="VSS" x="-17.78" y="-5.08" length="middle"/>
+<text x="-12.7" y="11.176" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AT42QT1010">
+<description>&lt;h3&gt;Atmel AT42QT1010&lt;/h3&gt;
+&lt;p&gt; The AT42QT1010 (QT1010) is a digital burst mode charge-transfer (QT™) sensor that is capable of detecting nearproximityor touch, making it ideal for implementing touch controls.The QT1010 is designed specifically for human interfaces, like control panels, appliances, toys, lighting controls, or
+anywhere a mechanical switch or button may be found. It includes all hardware and signal processing functions
+necessary to provide stable sensing under a wide variety of changing conditions. Only a single low-cost capacitor is
+required for operation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://www.atmel.com/images/Atmel-9541-AT42-QTouch-BSW-AT42QT1010_Datasheet.pdf'&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;Sparkfun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12041"&gt;Sparkfun Capacitive Touch Breakout&lt;/a&gt; (SEN-12041)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="AT42QT1010" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="SNS" pad="4"/>
+<connect gate="G$1" pin="SNSK" pad="3"/>
+<connect gate="G$1" pin="SYNC/MODE" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UDFN" package="UDFN/USON_8_PAD">
+<connects>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="SNS" pad="8"/>
+<connect gate="G$1" pin="SNSK" pad="1"/>
+<connect gate="G$1" pin="SYNC/MODE" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13773" constant="no"/>
+<attribute name="VALUE" value="AT42QT1010 - UDFN" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21664,7 +21713,7 @@ Switches electronic signals</description>
 <part name="R8" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="D7" library="SparkFun-LED" deviceset="LED-GREEN" device="1206" value="GREEN"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L" value="OSHW-LOGOL"/>
-<part name="U1" library="Testing" deviceset="AT42QT1010" device="UDFN">
+<part name="U1" library="SparkFun-Sensors" deviceset="AT42QT1010" device="UDFN" value="AT42QT1010 - UDFN">
 <attribute name="PROD_ID" value="IC-11778"/>
 </part>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
