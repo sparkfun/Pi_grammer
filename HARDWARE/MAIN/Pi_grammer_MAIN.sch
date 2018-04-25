@@ -22189,7 +22189,9 @@ and fall times across the entire VCC range from 1.65 V to 5.5 V.&lt;/p&gt;
 </class>
 </classes>
 <parts>
-<part name="J1" library="SparkFun-Boards" deviceset="RASPBERRYPI-B+-GPIO" device=""/>
+<part name="J1" library="SparkFun-Boards" deviceset="RASPBERRYPI-B+-GPIO" device="">
+<attribute name="PROD_ID" value="CONN-13502"/>
+</part>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -22212,9 +22214,7 @@ and fall times across the entire VCC range from 1.65 V to 5.5 V.&lt;/p&gt;
 <part name="R8" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="D7" library="SparkFun-LED" deviceset="LED-GREEN" device="1206" value="GREEN"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L" value="OSHW-LOGOL"/>
-<part name="U1" library="SparkFun-Sensors" deviceset="AT42QT1010" device="UDFN" value="AT42QT1010 - UDFN">
-<attribute name="PROD_ID" value="IC-11778"/>
-</part>
+<part name="U1" library="SparkFun-Sensors" deviceset="AT42QT1010" device="UDFN" value="AT42QT1010 - UDFN"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="10NF/10000PF-50V-10%(0603)" device="" value="10nF"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10k"/>
@@ -22323,7 +22323,9 @@ conversion.
 </text>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="50.8" y="327.66"/>
+<instance part="J1" gate="G$1" x="50.8" y="327.66">
+<attribute name="PROD_ID" x="50.8" y="327.66" size="1.27" layer="96" font="vector" display="off"/>
+</instance>
 <instance part="GND9" gate="1" x="30.48" y="292.1"/>
 <instance part="SUPPLY13" gate="G$1" x="33.02" y="355.6"/>
 <instance part="SUPPLY14" gate="G$1" x="22.86" y="355.6"/>

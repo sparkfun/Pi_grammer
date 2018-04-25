@@ -2096,7 +2096,7 @@ design rules under a new name.</description>
 </element>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="31.75" y="4.572"/>
 <element name="U1" library="SparkFun-Sensors" package="UDFN/USON_8_PAD" value="AT42QT1010 - UDFN" x="31.75" y="13.97" rot="R90">
-<attribute name="PROD_ID" value="IC-11778" x="31.75" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="IC-13773" x="31.75" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="AT42QT1010 - UDFN" x="31.75" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="27.813" y="14.097" rot="R180">
