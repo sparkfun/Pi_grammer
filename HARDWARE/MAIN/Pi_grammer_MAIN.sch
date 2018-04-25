@@ -22366,26 +22366,22 @@ conversion.
 <instance part="FD1" gate="G$1" x="251.46" y="208.28"/>
 <instance part="FD2" gate="G$1" x="254" y="210.82"/>
 <instance part="Q2" gate="NMOS" x="134.62" y="266.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.096" y="270.256" size="1.778" layer="95"/>
-<attribute name="VALUE" x="126.746" y="261.112" size="1.778" layer="96"/>
+<attribute name="NAME" x="130.81" y="261.62" size="1.778" layer="95"/>
 </instance>
 <instance part="R10" gate="G$1" x="124.46" y="271.78" rot="R270"/>
 <instance part="R12" gate="G$1" x="142.24" y="271.78" rot="R270"/>
 <instance part="Q1" gate="NMOS" x="134.62" y="327.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.096" y="331.47" size="1.778" layer="95"/>
-<attribute name="VALUE" x="126.746" y="322.072" size="1.778" layer="96"/>
+<attribute name="NAME" x="130.556" y="322.834" size="1.778" layer="95"/>
 </instance>
 <instance part="R13" gate="G$1" x="124.46" y="332.74" rot="R270"/>
 <instance part="R14" gate="G$1" x="142.24" y="332.74" rot="R270"/>
 <instance part="Q3" gate="NMOS" x="134.62" y="307.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.096" y="310.896" size="1.778" layer="95"/>
-<attribute name="VALUE" x="126.746" y="301.752" size="1.778" layer="96"/>
+<attribute name="NAME" x="130.302" y="302.514" size="1.778" layer="95"/>
 </instance>
 <instance part="R15" gate="G$1" x="124.46" y="312.42" rot="R270"/>
 <instance part="R16" gate="G$1" x="142.24" y="312.42" rot="R270"/>
 <instance part="Q4" gate="NMOS" x="134.62" y="287.02" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.096" y="290.576" size="1.778" layer="95"/>
-<attribute name="VALUE" x="126.746" y="281.432" size="1.778" layer="96"/>
+<attribute name="NAME" x="130.556" y="282.194" size="1.778" layer="95"/>
 </instance>
 <instance part="R17" gate="G$1" x="124.46" y="292.1" rot="R270"/>
 <instance part="R18" gate="G$1" x="142.24" y="292.1" rot="R270"/>
@@ -22422,8 +22418,7 @@ conversion.
 </instance>
 <instance part="GND13" gate="1" x="111.76" y="198.12"/>
 <instance part="Q5" gate="NMOS" x="134.62" y="243.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.096" y="247.396" size="1.778" layer="95"/>
-<attribute name="VALUE" x="126.746" y="238.252" size="1.778" layer="96"/>
+<attribute name="NAME" x="130.048" y="238.506" size="1.778" layer="95"/>
 </instance>
 <instance part="R21" gate="G$1" x="142.24" y="248.92" rot="R270"/>
 <instance part="R22" gate="G$1" x="124.46" y="248.92" rot="R270"/>
