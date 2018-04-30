@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22276,6 +22276,7 @@ and fall times across the entire VCC range from 1.65 V to 5.5 V.&lt;/p&gt;
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".6_INCH" value="SFE_LOGO_NAME.6_INCH"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22425,6 +22426,7 @@ conversion.
 <instance part="LOGO3" gate="G$1" x="197.612" y="219.71"/>
 <instance part="FD3" gate="G$1" x="254" y="208.28"/>
 <instance part="FD4" gate="G$1" x="251.46" y="210.82"/>
+<instance part="SUPPLY3" gate="G$1" x="223.52" y="353.06"/>
 </instances>
 <busses>
 </busses>
@@ -22603,11 +22605,6 @@ conversion.
 <junction x="22.86" y="347.98"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="350.52" x2="223.52" y2="350.52" width="0.1524" layer="91"/>
-<label x="223.52" y="350.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="355.6" x2="96.52" y2="358.14" width="0.1524" layer="91"/>
@@ -22692,6 +22689,12 @@ conversion.
 <pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
 <wire x1="177.8" y1="276.86" x2="177.8" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="350.52" x2="223.52" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="350.52" x2="223.52" y2="353.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXO" class="0">
