@@ -270,7 +270,7 @@ def killall_avrdude():
 def program_serial():
         serial_hopeful = False
         print "serial programming beginning..."
-        command = "sh /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh"
+        command = "bash /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh"
         import subprocess
         process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
         #output = process.communicate()[0]
