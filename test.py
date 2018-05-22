@@ -270,7 +270,8 @@ def killall_avrdude():
 def program_serial():
         serial_hopeful = False
         print "serial programming beginning..."
-        command = "bash /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh"
+        #command = "bash /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh" #Use BASH for more funcitonality (if coniditionsals etc), but be warned this can add 4-5 seconds before the command begins running
+        command = "sh /home/pi/SERIAL_UPLOAD/pi_serial_upload.sh" # default to "SH" for immediately running command - useful to still work with serial timeout failure feature
         import subprocess
         process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
         #output = process.communicate()[0]
