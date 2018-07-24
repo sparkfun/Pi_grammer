@@ -1,4 +1,4 @@
-SparkFun Pi_grammer
+SparkFun Pi AVR Programmer HAT
 ========================================
 
 ![SparkFun Raspberry Pi Stand-Alone Programmer w/ the Pi-Grammer Hat](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/7/3/9/Pi_Grammer.jpg)
@@ -33,4 +33,15 @@ KEYWORDS: RASPI PROGRAMMER
 
 [SparkFun Cerberus USB Cable](https://www.sparkfun.com/products/12016)
 
+License Information
+-------------------
 
+This product is _**open source**_! 
+
+Please review the LICENSE.md file for license information. 
+
+If you have any questions or concerns on licensing, please contact techsupport@sparkfun.com.
+
+Distributed as-is; no warranty is given.
+
+- Your friends at SparkFun.
