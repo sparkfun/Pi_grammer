@@ -31,7 +31,8 @@ note, test.py also checks for MEDIA drives plugged into the USB ports of the Ras
 
 KEYWORDS: RASPI PROGRAMMER
 
-## Troubleshooting Tips:
+Troubleshooting Tips
+--------------
 
 1) USB port issues. If you are having trouble with com port enumeration. That is, you are plugging in something like an FTDI serial basic, and the Raspi will not recognize it. This may be fixed by using one of SparkFun Cerberus USB hub cables. We found that after plugging in 20+ FTDI basics into a pi, then it stops recognizing the devices. But if you use a hub (like the cerberus) inbetween the pi USB and the serial bridge IC, then it always pops up as "/dev/ttyUSB0" for 1000s of boards in a row. Wahoo!
 
