@@ -5,11 +5,12 @@ SparkFun Pi AVR Programmer HAT
 
 [*SparkFun Pi AVR Programmer HAT (DEV-14747)*](https://www.sparkfun.com/products/14747)
 
-A shield for Raspberry Pi 2, used for programming AVR ICs. Includes capsense pad to engage, 3x2 ISP header for connectivity and status LEDs. For more information about the Pi_Grammer can be found in the article: [Raspberry Pi Stand-Alone Programmer](https://learn.sparkfun.com/tutorials/raspberry-pi-stand-alone-programmer).
+A shield for Raspberry Pi 2, used for programming AVR ICs. Includes capsense pad to engage, 2x3 ISP header for connectivity and status LEDs.
 
 Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/pi-avr-programmer-hat-hookup-guide)** - Basic hookup guide for the Pi AVR Programmer Hat.
+* **[Raspberry Pi Stand-Alone Programmer](https://learn.sparkfun.com/tutorials/raspberry-pi-stand-alone-programmer)** - more information about the prototype can be found in the article.
 
 Additional Notes
 --------------
